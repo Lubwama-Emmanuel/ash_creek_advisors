@@ -123,3 +123,40 @@ h3{
     width: 700px; /* Adjust the desired width */
     height: 350px;
   }
+
+/* second section */
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+  }
+  
+  .text-container2 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .text-container2 p {
+    margin: 0;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .text-container2 h3{
+    margin: 0;
+    color: #000;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: justify;
+  }
+
+  /* third section */
+  
+  
