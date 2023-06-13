@@ -104,6 +104,7 @@ h3{
     height: 130px;
     width: 500px;
     margin-left: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   }
   .text-container h3{
     font-size: 23px;
@@ -130,7 +131,8 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 50px;
+    padding: 50px 15px;
+    margin-bottom: 38px;
   }
   
   .text-container2 {
@@ -163,10 +165,11 @@ h3{
     position: relative;
     display: flex;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 60px;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: #f1f1f1;
 }
 .text-container3 {
     background-color: white;
@@ -196,4 +199,161 @@ h3{
     margin-left: 450px;
     width: 700px; /* Adjust the desired width */
     height: 350px;
+  }
+
+ /* Fourth Section */
+ .fourth {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    background-color: #f1f1f1;
+  }
+ .fourth img{
+    width: 1000px;
+    height: 600px;
+ } 
+  
+  .text-container4 {
+    position: absolute;
+    top: 49%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    height: 300px;
+  }
+  
+  .text-container4 p {
+    margin: 0;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    padding-bottom: 2px;
+  }
+  .text-container4 h3{
+    margin: 0;
+    color: #000;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: justify;
+  } 
+  .text-container4 ul li{
+    list-style-type: none;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+  }
+
+  /* Portfolio */
+  .heading{
+    color: #000;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top:30px ;
+  }
+  .portfolio{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .imagesect{
+    width: 180px;
+    height: 80px;
+    padding-top: 15px;
+  }
+  .textsect{
+    padding-top: 55px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 800px;
+    height: 200px;
+    text-align: left;
+  }
+  .textsect h5{
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 5px;
+  }
+  .textsect a{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .textsect p{
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 5px;
+    color: #050505;
+  }
+
+  /* fifth section */
+  .fifth {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
+    background-color: #f1f1f1;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .fifth img{
+    width: 800px;
+    height: 350px;
+  }
+  
+  .text-container5 {
+    position: absolute;
+    top: 34%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 18px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    width: 470px;
+    height: 290px;
+  }
+  
+  .text-container5 p {
+    margin: 0;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .text-container5 h3{
+    margin: 0;
+    color: #000;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .text-container5 h6{
+    margin: 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: justify;
+  }
+  .text-container5 ul li{
+    list-style-type: none;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+  }
+  .list{
+    columns: 2;
   }
