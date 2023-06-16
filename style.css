@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap'); /*changed this*/
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merriweather', serif; /*changed this*/
 }
 body{
   width: 100%;
@@ -14,7 +14,7 @@ p{
     font-size: 16px;
     font-weight: 500;
     color: #333;
-    line-height: 1.5;
+    line-height: 1.5; /*changed this*/
 }
 h1{
     font-size: 43px;
@@ -25,7 +25,13 @@ h3{
     font-size: 32px;
     font-weight:600;
     color: #333;
+    line-height: 1.5; /*added this*/
 }
+/*added this*/
+h6{
+  line-height: 1.5;
+}
+
 /* Navigation */
 #header{
     display: flex;
@@ -40,7 +46,7 @@ h3{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 .menu-icon {
-  display: none; /* Hide the menu icon by default */
+  display: none; 
   cursor: pointer;
 }  
 
@@ -99,7 +105,7 @@ h3{
   z-index: 1;
 }
 .hero button{
-    background-color: #000000CF;
+    background-color: #000000CF; /* I changed the color of the buttons*/
     padding: 15px 20px;
     font-size: 16px;
     color: #ffffff;
@@ -126,18 +132,18 @@ h3{
     background-color: white;
     padding: 5px 25px;
     position: absolute;
-    margin-top: 165px; /* Adjust this value to move the text up or down */
+    margin-top: 165px; /*changed this*/
     z-index: 1;
-    height: 175px;
+    height: 175px; /*changed the height*/
     width: 530px;
-    margin-left: 250px;
+    margin-left: 250px; /*changed this*/
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   }
   .text-container h3{
     font-size: 23px;
     font-weight: 600;
     color: #000;
-    text-transform: capitalize;
+    text-transform: capitalize; /* I added this*/
     padding: 2px;
   }
   .text-container p{
@@ -146,10 +152,11 @@ h3{
     color: #0a0a0a;
     text-align: justify;
   }
+/*changed this image section*/
   .image {
     margin-left: 450px;
     width: 100%;
-    max-width: 700px; /* Adjust the desired width */
+    max-width: 700px; 
     max-height: 350px;
     height: auto;
   }
@@ -161,12 +168,12 @@ h3{
     justify-content: center;
     align-items: center;
     padding: 50px 15px;
-    margin-bottom: 38px;
+    margin-bottom: 55px; /*changed this*/
   }
-
+/*added this part*/
   .image-container img {
-    max-width: 100%; /* Ensures the image doesn't exceed its container */
-    height: auto; /* Maintains aspect ratio while resizing */
+    max-width: 100%; 
+    height: auto; 
   }
 
   .text-container2 {
@@ -192,7 +199,7 @@ h3{
     font-size: 23px;
     font-weight: 600;
     text-align: justify;
-    text-transform: capitalize;
+    text-transform: capitalize;/*changed this*/
   }
 
   /* third section */
@@ -200,25 +207,25 @@ h3{
     position: relative;
     display: flex;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 120px; 
     padding-bottom: 60px;
     padding-left: 15px;
     padding-right: 15px;
     background-color: #f1f1f1;
 }
-
+/* i added this*/
 .third img {
-  max-width: 100%; /* Ensures the image doesn't exceed its container */
-  height: auto; /* Maintains aspect ratio while resizing */
+  max-width: 100%; 
+  height: auto; 
 }
 
 .text-container3 {
     background-color: white;
     padding: 5px 25px;
     position: absolute;
-    margin-top: -245px; /* Adjust this value to move the text up or down */
+    margin-top: -245px; 
     z-index: 1;
-    height: 215px;
+    height: 250px; /*changed this*/
     width: 600px;
     margin-left: 160px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
@@ -227,7 +234,7 @@ h3{
     font-size: 23px;
     font-weight: 600;
     color: #000;
-    text-transform: capitalize;
+    text-transform: capitalize; /*added this*/
     padding: 2px;
   }
   .text-container3 p{
@@ -251,6 +258,7 @@ h3{
     padding: 50px 15px;
     background-color: #f1f1f1;
   }
+  /*made changes to this image part*/
  .fourth img{
     max-width: 1000px;
     max-height: 600px;
@@ -261,13 +269,13 @@ h3{
   .text-container4 {
     position: absolute;
     top: 49%;
-    left: 65%;
+    left: 65%; 
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     width: 600px;
-    height: 345px;
+    height: 365px; /*changed this*/
   }
   
   .text-container4 p {
@@ -285,12 +293,15 @@ h3{
     font-weight: 600;
     text-align: justify;
   } 
+/* made changes to the next 2 parts for the lists*/
   .text-container4 ul li{
     color: #1a1a1a;
     font-size: 14px;
     font-weight: 400;
     padding-left: 10px;
+    line-height: 1.5; /*added this*/
   }
+  /*check this section too*/
   .text-container4 ul {
     list-style-type: disc; 
     margin-left: 20px; 
@@ -311,13 +322,14 @@ h3{
     padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 20px;
   }
   .imagesect{
     width: 180px;
     height: 80px;
     padding-top: 15px;
   }
-
+/*added this next part*/
   .imagesect img{
     width: 100%;
     height: auto;
@@ -356,28 +368,30 @@ h3{
     align-items: center;
     margin-bottom: 38px;
     background-color: #f1f1f1;
-    padding-top: 160px;
+    padding-top: 200px; /*changed this*/
     padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
   }
+  /*changed this part and added some specs*/
   .fifth img{
-    max-width: 800px;
-    max-height: 350px;
+    max-width: 900px;
+    max-height: 550px;
     width: 100%;
     height: auto;
   }
   
   .text-container5 {
     position: absolute;
-    top: 40%;
-    left: 52%;
+    top: 35%; /*changed this*/
+    left: 50%; /*changed this*/
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 18px;
+   margin-top: 30px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     width: 470px;
-    height: auto;
+    height: auto; /*changed this*/
   }
   
   .text-container5 p {
@@ -409,22 +423,24 @@ h3{
     padding-left: 10px;
   } */
 
+  /*added the next 2 parts*/
   .text-container5 ul {
-    list-style-type: disc; /* Adjust the list style type as desired */
-    margin-left: 20px; /* Adjust the left margin as desired */
-    padding-left: 20px; /* Adjust the left padding as desired */
+    list-style-type: disc; 
+    margin-left: 20px; 
+    padding-left: 20px; 
   }
   
   .text-container5 ul li {
     color: #1a1a1a;
     font-size: 14px;
     font-weight: 400;
+    line-height: 1.5; /* added this*/
   }
   .list{
     columns: 2;
   }
 
-
+ /* Responsiveness css starts here*/
   @media only screen and (max-width: 768px){
     html,
     body{
@@ -432,6 +448,7 @@ h3{
     overflow-x:hidden;
     padding: 0;
     }
+/*for first section*/
     .container{
       flex-direction: column;
       align-items: center;
@@ -443,7 +460,7 @@ h3{
       position: static;
       height: auto;
     }
-  
+  /*for second section*/
     .image {
       margin: 20px auto;
       max-width: 100%;
@@ -459,7 +476,7 @@ h3{
       transform: none;
       margin: 20px auto;
     }
-
+/*for third section*/
     .third {
       flex-direction: column;
       padding: 60px 15px;
@@ -476,6 +493,7 @@ h3{
       margin: 20px auto;
       width: 100%;
     }
+    /*for fourth section*/
     .fourth {
       flex-direction: column-reverse;
       padding: 30px 15px;
@@ -499,6 +517,7 @@ h3{
     .text-container4 li{
       text-align: left;
     }
+    /*for portfolio section*/
     .portfolio {
       flex-wrap: wrap;
     }
@@ -519,6 +538,7 @@ h3{
       text-align: justify;
       padding-top: 10px;
     }
+    /*for fifth section*/
     .fifth {
       flex-direction: column;
       align-items: center;
@@ -538,8 +558,6 @@ h3{
       height: auto;
     }
 }
-
-  /* Responsiveness   */
 @media (max-width: 768px) {
   
   /* Collapse the navigation bar into a hamburger menu */
@@ -552,7 +570,7 @@ h3{
     display: block;
     margin-bottom: 10px;
   }
-
+/*for hero section*/
   .hero {
     padding: 10px;
   }
