@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 body{
   width: 100%;
@@ -14,6 +14,7 @@ p{
     font-size: 16px;
     font-weight: 500;
     color: #333;
+    line-height: 1.5;
 }
 h1{
     font-size: 43px;
@@ -29,7 +30,7 @@ h3{
 #header{
     display: flex;
     justify-content: flex-end;
-    align-items: right;
+    align-items: center;
     padding: 24px 20px;
     background: #f1f1f1;
     z-index: 999;
@@ -38,11 +39,25 @@ h3{
     left: 0;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
+.menu-icon {
+  display: none; /* Hide the menu icon by default */
+  cursor: pointer;
+}  
+
+.menu-icon .icon {
+  width: 25px;
+  height: 3px;
+  background-color: #1a1a1a;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
 
 #navbar{
     display: flex;
     align-items: right;
     justify-content: right;
+    margin: 0;
+    padding: 0;
 }
 #navbar li{
     list-style: none;
@@ -55,9 +70,11 @@ h3{
     font-size: 20px;
     color: #1a1a1a;
     transition: 0.3s, ease;
+    text-transform: capitalize;
 }
 
-#navbar li a:hover a:active{
+#navbar li a:hover 
+#navbar li a:active{
     color: #3CB371;
 }
 
@@ -82,7 +99,7 @@ h3{
   z-index: 1;
 }
 .hero button{
-    background-color: #00000070;
+    background-color: #000000CF;
     padding: 15px 20px;
     font-size: 16px;
     color: #ffffff;
@@ -109,11 +126,11 @@ h3{
     background-color: white;
     padding: 5px 25px;
     position: absolute;
-    margin-top: 150px; /* Adjust this value to move the text up or down */
+    margin-top: 165px; /* Adjust this value to move the text up or down */
     z-index: 1;
-    height: 130px;
-    width: 500px;
-    margin-left: 300px;
+    height: 175px;
+    width: 530px;
+    margin-left: 250px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   }
   .text-container h3{
@@ -131,8 +148,10 @@ h3{
   }
   .image {
     margin-left: 450px;
-    width: 700px; /* Adjust the desired width */
-    height: 350px;
+    width: 100%;
+    max-width: 700px; /* Adjust the desired width */
+    max-height: 350px;
+    height: auto;
   }
 
 /* second section */
@@ -144,7 +163,12 @@ h3{
     padding: 50px 15px;
     margin-bottom: 38px;
   }
-  
+
+  .image-container img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    height: auto; /* Maintains aspect ratio while resizing */
+  }
+
   .text-container2 {
     position: absolute;
     top: 90%;
@@ -168,6 +192,7 @@ h3{
     font-size: 23px;
     font-weight: 600;
     text-align: justify;
+    text-transform: capitalize;
   }
 
   /* third section */
@@ -181,13 +206,19 @@ h3{
     padding-right: 15px;
     background-color: #f1f1f1;
 }
+
+.third img {
+  max-width: 100%; /* Ensures the image doesn't exceed its container */
+  height: auto; /* Maintains aspect ratio while resizing */
+}
+
 .text-container3 {
     background-color: white;
     padding: 5px 25px;
     position: absolute;
     margin-top: -245px; /* Adjust this value to move the text up or down */
     z-index: 1;
-    height: 195px;
+    height: 215px;
     width: 600px;
     margin-left: 160px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
@@ -221,8 +252,10 @@ h3{
     background-color: #f1f1f1;
   }
  .fourth img{
-    width: 1000px;
-    height: 600px;
+    max-width: 1000px;
+    max-height: 600px;
+    width: 100%;
+    height: auto;
  } 
   
   .text-container4 {
@@ -234,7 +267,7 @@ h3{
     padding: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     width: 600px;
-    height: 300px;
+    height: 345px;
   }
   
   .text-container4 p {
@@ -253,13 +286,16 @@ h3{
     text-align: justify;
   } 
   .text-container4 ul li{
-    list-style-type: none;
     color: #1a1a1a;
     font-size: 14px;
     font-weight: 400;
     padding-left: 10px;
   }
-
+  .text-container4 ul {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    padding-left: 20px; 
+  }
   /* Portfolio */
   .heading{
     color: #000;
@@ -281,6 +317,12 @@ h3{
     height: 80px;
     padding-top: 15px;
   }
+
+  .imagesect img{
+    width: 100%;
+    height: auto;
+  }
+
   .textsect{
     padding-top: 55px;
     padding-bottom: 10px;
@@ -314,26 +356,28 @@ h3{
     align-items: center;
     margin-bottom: 38px;
     background-color: #f1f1f1;
-    padding-top: 120px;
+    padding-top: 160px;
     padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
   }
   .fifth img{
-    width: 800px;
-    height: 350px;
+    max-width: 800px;
+    max-height: 350px;
+    width: 100%;
+    height: auto;
   }
   
   .text-container5 {
     position: absolute;
-    top: 34%;
+    top: 40%;
     left: 52%;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 18px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     width: 470px;
-    height: 290px;
+    height: auto;
   }
   
   .text-container5 p {
@@ -357,22 +401,147 @@ h3{
     font-weight: 600;
     text-align: justify;
   }
-  .text-container5 ul li{
+ /* .text-container5 ul li{
     list-style-type: none;
     color: #1a1a1a;
     font-size: 14px;
     font-weight: 400;
     padding-left: 10px;
+  } */
+
+  .text-container5 ul {
+    list-style-type: disc; /* Adjust the list style type as desired */
+    margin-left: 20px; /* Adjust the left margin as desired */
+    padding-left: 20px; /* Adjust the left padding as desired */
+  }
+  
+  .text-container5 ul li {
+    color: #1a1a1a;
+    font-size: 14px;
+    font-weight: 400;
   }
   .list{
     columns: 2;
   }
 
 
+  @media only screen and (max-width: 768px){
+    html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+    padding: 0;
+    }
+    .container{
+      flex-direction: column;
+      align-items: center;
+      padding: 130px 165px;
+    }
+    .text-container {
+      width: 100%;
+      margin: 20px auto;
+      position: static;
+      height: auto;
+    }
+  
+    .image {
+      margin: 20px auto;
+      max-width: 100%;
+    }
+    .image-container {
+      padding: 30px 15px;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  
+    .text-container2 {
+      position: static;
+      transform: none;
+      margin: 20px auto;
+    }
 
+    .third {
+      flex-direction: column;
+      padding: 60px 15px;
+    }
+  
+    .text-container3 {
+      position: static;
+      margin: 20px auto;
+      width: 100%;
+      height: auto;
+    }
+  
+    .image3 {
+      margin: 20px auto;
+      width: 100%;
+    }
+    .fourth {
+      flex-direction: column-reverse;
+      padding: 30px 15px;
+      text-align: center;
+    }
+  
+    .fourth img {
+      max-height: 400px;
+      margin-top: 10px;
+    }
+  
+    .text-container4 {
+      position: static;
+      margin-top: 20px;
+      width: 100%;
+      height: auto;
+      transform: none;
+      left: auto;
+      text-align: center;
+    }
+    .text-container4 li{
+      text-align: left;
+    }
+    .portfolio {
+      flex-wrap: wrap;
+    }
+  
+    .imagesect {
+      width: 100px;
+      height: auto;
+      padding: 0;
+    }
+  
+    .textsect {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      height: auto;
+    }
+    .textsect p{
+      text-align: justify;
+      padding-top: 10px;
+    }
+    .fifth {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 16px;
+    }
+  
+    .fifth img {
+      max-width: 100%;
+    }
+  
+    .text-container5 {
+      position: static;
+      transform: none;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      height: auto;
+    }
+}
 
   /* Responsiveness   */
 @media (max-width: 768px) {
+  
   /* Collapse the navigation bar into a hamburger menu */
   #navbar {
     flex-direction: column;
@@ -383,6 +552,7 @@ h3{
     display: block;
     margin-bottom: 10px;
   }
+
   .hero {
     padding: 10px;
   }
@@ -393,6 +563,10 @@ h3{
 
   .hero .second {
     font-size: 14px;
+  }
+  .container{
+    width: 100%;
+    padding: 10px;
   }
 }
 
